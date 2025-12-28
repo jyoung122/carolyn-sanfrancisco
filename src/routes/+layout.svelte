@@ -15,45 +15,17 @@
 <svelte:head>
 	<!-- Primary Meta Tags -->
 	<title
-		>Carolyn Sanfrancisco: An AI spin on the classic 'Where in the World is Carmen Sandiego?'</title
+		>Carolyn San Diego: Happy Birthday to my lovely wife.</title
 	>
 	<meta
 		name="title"
-		content="Carolyn Sanfrancisco: An AI spin on the classic 'Where in the World is Carmen Sandiego?'"
+		content="Carolyn San Diego: Happy Birthday to my lovely wife."
 	/>
 	<meta
 		name="description"
-		content="Chase Luke and his accomplices across different countries, unraveling clues, solving puzzles, and expanding your geography knowledge in this exciting detective game."
+		content="Chase The Bootleggers and his accomplices across different countries, unraveling clues, solving puzzles, and expanding your geography knowledge in this exciting detective game."
 	/>
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://julia.fernando.is/" />
-	<meta
-		property="og:title"
-		content="Julia Sanfrancisco: An AI spin on the classic 'Where in the World is Carmen Sandiego?'"
-	/>
-	<meta
-		property="og:description"
-		content="Chase Julia and her accomplices across different countries, unraveling clues, solving puzzles, and expanding your geography knowledge in this exciting detective game."
-	/>
-	<meta property="og:image" content="https://julia.fernando.is/open-graph.png" />
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content="httpsjulia.fernando.is/" />
-	<meta
-		property="twitter:title"
-		content="Julia Sanfrancisco: An AI spin on the classic 'Where in the World is Carmen Sandiego?'"
-	/>
-	<meta
-		property="twitter:description"
-		content="Chase Julia and her accomplices across different countries, unraveling clues, solving puzzles, and expanding your geography knowledge in this exciting detective game."
-	/>
-	<meta property="twitter:image" content="https://julia.fernando.is/open-graph.png" />
 
-	{#if PUBLIC_PLAUSIBLE_DOMAIN}
-		<script defer data-domain={PUBLIC_PLAUSIBLE_DOMAIN} src="https://management.fernando.is/js/script.js">
-		</script>
-	{/if}
 </svelte:head>
 
 <div class="layout">

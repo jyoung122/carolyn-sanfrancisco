@@ -39,12 +39,13 @@ import { renaStone } from './suspects/rena-stone';
 import { simonSimonski } from './suspects/simon-simonski';
 import { sparkleLily } from './suspects/sparkle-lily';
 import { speedyJakeZ } from './suspects/speedy-jake-z';
+import { lukeCombs } from './suspects/luke-combs';
 
 const en = {
 	splash: {
-		title: 'Julia Sanfrancisco',
+		title: 'Carolyn San Diego',
 		introduction:
-			'Chase Julia and her accomplices across different countries, unraveling clues, solving puzzles, and expanding your geography knowledge in this exciting detective game.',
+			'Chase criminal and their accomplices across different countries, unraveling clues, solving puzzles, and expanding your geography knowledge in this exciting detective game.',
 		newGame: 'New game',
 		about: 'About'
 	},
@@ -67,7 +68,7 @@ const en = {
 			}
 		},
 		id: {
-			acmeSystems: 'ACME Systems',
+			acmeSystems: 'Skipper',
 			yourName: 'Your name',
 			pending: 'Detective at keyboard, please identify yourself',
 			indentified: 'You have been identified as {name:string}.',
@@ -78,6 +79,19 @@ const en = {
 		outcome: {
 			incomingMessage: 'Incoming message',
 			ready: 'Ready for your next case, {rank:string} {name:string}?',
+			birthdaySurprise: {
+				title: '🎂 SPECIAL MESSAGE 🎂 ',
+				heading: 'Happy Birthday, Babe!',
+				message: "I don't always remember to tell you often enough just how much I admire you. How much I appreciate you, your sense of humor, your generosity and your kind heart. I love all the little things you do for me and our family.  I can't wait to see this with you. Love Babe",
+				reveal: 'Your REAL reward for solving this case...',
+				concert: {
+					artist: 'Luke Combs in Concert!',
+					venue: 'Scott Stadium',
+					location: 'Charlottesville, VA',
+					date: 'April 4th, 2026',
+					time: '6:00 PM'
+				}
+			},
 			caughtWithWarrant: {
 				0: 'Thaks to your help, the {city:string} police have apprehended {suspect:string}.',
 				1: '{suspect:string} had the loot, {stolenTreasure:string}, wich will be returned to the grateful residents of {city:string}.',
@@ -94,7 +108,7 @@ const en = {
 			caughtWithoutWarrant: {
 				0: 'You have caught up with {suspect:string}.',
 				1: 'However, without a warrant we cannot make a legal arrest.',
-				2: "It looks like Julia's gang has gotten away with another caper!"
+				2: "It looks like the criminal has gotten away with another caper!"
 			},
 			gotAway: {
 				0: 'Bad news...',
@@ -134,7 +148,8 @@ const en = {
 		renaStone,
 		simonSimonski,
 		sparkleLily,
-		speedyJakeZ
+		speedyJakeZ,
+		lukeCombs
 	},
 	warrants: {
 		labels: {
@@ -173,7 +188,8 @@ const en = {
 			tattoo: 'Tattoo',
 			birthmark: 'Birthmark',
 			ring: 'Ring',
-			necklace: 'Necklace'
+			necklace: 'Necklace',
+			cap: 'Baseball cap'
 		},
 		vehicle: {
 			bike: 'Bicycle',
@@ -183,7 +199,8 @@ const en = {
 			convertible: 'Convertible',
 			limousine: 'Limousine',
 			transit: 'Public transit',
-			jet: 'Jet'
+			jet: 'Jet',
+			tourBus: 'Tour bus'
 		},
 		worldPolice: 'World Police',
 		warrants: 'Warrants',

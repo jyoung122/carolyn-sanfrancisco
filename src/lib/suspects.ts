@@ -8,7 +8,8 @@ export enum Suspect {
 	RENA_STONE = 'renaStone',
 	SIMON_SIMONSKI = 'simonSimonski',
 	SPARKLE_LILY = 'sparkleLily',
-	SPEEDY_JAKE_Z = 'speedyJakeZ'
+	SPEEDY_JAKE_Z = 'speedyJakeZ',
+	THE_BOOTLEGGERS = 'lukeCombs'
 }
 
 export enum WarrantSex {
@@ -39,7 +40,8 @@ export enum WarrantFeature {
 	TATTOO = 'tattoo',
 	BIRTHMARK = 'birthmark',
 	RING = 'ring',
-	NECKLACE = 'necklace'
+	NECKLACE = 'necklace',
+	CAP = 'cap'
 }
 
 export enum WarrantVehicle {
@@ -50,7 +52,8 @@ export enum WarrantVehicle {
 	CONVERTIBLE = 'convertible',
 	LIMOUSINE = 'limousine',
 	TRANSIT = 'transit',
-	JET = 'jet'
+	JET = 'jet',
+	TOUR_BUS = 'tourBus'
 }
 
 export interface WarrantKeys {
@@ -142,6 +145,14 @@ export function getSuspectWarrantKeys(suspect: Suspect): WarrantKeys {
 				hair: WarrantHair.BLACK,
 				feature: WarrantFeature.SCAR,
 				vehicle: WarrantVehicle.BIKE
+			};
+		case Suspect.THE_BOOTLEGGERS:
+			return {
+				sex: WarrantSex.MALE,
+				hobby: WarrantHobby.GUITAR,
+				hair: WarrantHair.BROWN,
+				feature: WarrantFeature.CAP,
+				vehicle: WarrantVehicle.TOUR_BUS
 			};
 		default:
 			throw new Error('No warrant found for this suspect.');

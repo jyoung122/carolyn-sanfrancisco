@@ -38,38 +38,9 @@
 			<nav class="splash-nav">
 				<div class="splash-nav__new-game">
 					<ButtonLink href="/headquarters/">{$LL.splash.newGame()}</ButtonLink>
-					<Button
-						compact={true}
-						disabled={$locale === 'en'}
-						on:click={() => applyLocale('en', playerStore)}>🇺🇸</Button
-					>
-					<Button
-						compact={true}
-						disabled={$locale === 'es'}
-						on:click={() => applyLocale('es', playerStore)}>🇪🇸</Button
-					>
 				</div>
 
-				<div class="splash-nav__about">
-					<a
-						class="metadata"
-						target="_blank"
-						href="https://github.com/fmaclen/julia-sanfrancisco/releases/"
-					>
-						v{PUBLIC_GAME_VERSION}
-					</a>
-					<a class="metadata" target="_blank" href="https://github.com/fmaclen/julia-sanfrancisco/">
-						{$LL.splash.about()}
-					</a>
-					<a
-						class="metadata"
-						target="_blank"
-						href="https://discord.com/channels/532702198040100874/1108858794831790080"
-					>
-						Discord
-					</a>
-					<a class="metadata" target="_blank" href="https://twitter.com/fmaclen/">Twitter</a>
-				</div>
+			
 			</nav>
 		{/if}
 	</Footer>

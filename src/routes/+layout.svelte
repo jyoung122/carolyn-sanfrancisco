@@ -7,7 +7,7 @@
 
 	onMount(() => {
 		const locale: Locales =
-			$playerStore?.locale ?? detectLocale('en', ['en', 'es'], navigatorDetector);
+			$playerStore?.locale ?? detectLocale('en', ['en'], navigatorDetector);
 		applyLocale(locale, playerStore);
 	});
 </script>
@@ -15,15 +15,15 @@
 <svelte:head>
 	<!-- Primary Meta Tags -->
 	<title
-		>Julia Sanfrancisco: An AI spin on the classic 'Where in the World is Carmen Sandiego?'</title
+		>Carolyn Sanfrancisco: An AI spin on the classic 'Where in the World is Carmen Sandiego?'</title
 	>
 	<meta
 		name="title"
-		content="Julia Sanfrancisco: An AI spin on the classic 'Where in the World is Carmen Sandiego?'"
+		content="Carolyn Sanfrancisco: An AI spin on the classic 'Where in the World is Carmen Sandiego?'"
 	/>
 	<meta
 		name="description"
-		content="Chase Julia and her accomplices across different countries, unraveling clues, solving puzzles, and expanding your geography knowledge in this exciting detective game."
+		content="Chase Luke and his accomplices across different countries, unraveling clues, solving puzzles, and expanding your geography knowledge in this exciting detective game."
 	/>
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />

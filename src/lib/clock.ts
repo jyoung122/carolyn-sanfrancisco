@@ -32,7 +32,7 @@ export default class Clock {
 
 		const startOfCurrentWeek = startOfWeek(new Date(), { weekStartsOn: 1 });
 		this.startTime = addHours(startOfCurrentWeek, 9); // Monday at 9 am
-		this.endTime = addHours(addDays(this.startTime, 7), 8); // Sunday at 5 pm
+		this.endTime = addHours(addDays(this.startTime, 14), 8); // Two weeks later at 5 pm
 		this.currentTime = this.startTime;
 	}
 

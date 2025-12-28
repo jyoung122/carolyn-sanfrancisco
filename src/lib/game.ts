@@ -417,8 +417,8 @@ function setDecoyDestinations(
 }
 
 function getLocalizedSuspects(LL: TranslationFunctions): LocalizedSuspect {
-	const suspects: Suspect[] = Object.values(Suspect);
-	const suspect = getRandomValue(suspects);
+	// Always use Luke Combs as the suspect
+	const suspect = Suspect.THE_BOOTLEGGERS;
 	const translationKey = suspect as keyof Translation['suspects'];
 
 	const localizedSuspect: LocalizedSuspect = {

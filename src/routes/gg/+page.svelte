@@ -114,7 +114,7 @@
 
 	$: {
 		currentStepIndex = 0;
-		maxStepIndex = suspectGotAway ? 0 : 1;
+		maxStepIndex = suspectGotAway ? 0 : (suspectCaughtWithWarrant ? 2 : 1);
 	}
 
 	async function playOutroScene(): Promise<void> {
@@ -195,14 +195,26 @@
 							{#if currentStepIndex > 0}
 								<TerminalRows lines={outcomeSuspectCaughtWithWarrant[1]} bind:isAnimating />
 							{/if}
-						{/if}
-
-						{#if suspectCaughtWithWrongWarrant}
-							<TerminalRows lines={outcomeSuspectCaughtWithWrongWarrant[0]} />
-							{#if currentStepIndex > 0}
-								<TerminalRows lines={outcomeSuspectCaughtWithWrongWarrant[1]} bind:isAnimating />
+							{#if currentStepIndex > 1}
+								<TerminalRows 
+									lines={[
+										{ text: $LL.game.outcome.birthdaySurprise.title(), isTitle: true },
+										{ text: $LL.game.outcome.birthdaySurprise.heading() },
+									{ text: '' },
+									{ text: $LL.game.outcome.birthdaySurprise.message() },
+									{ text: '' },
+									{ text: $LL.game.outcome.birthdaySurprise.reveal() },
+									{ text: '' },
+									{ text: `🎸 ${$LL.game.outcome.birthdaySurprise.concert.artist()}` },
+									{ text: $LL.game.outcome.birthdaySurprise.concert.venue() },
+										{ text: $LL.game.outcome.birthdaySurprise.concert.location() },
+										{ text: `${$LL.game.outcome.birthdaySurprise.concert.date()} at ${$LL.game.outcome.birthdaySurprise.concert.time()}` }
+									]}
+									bind:isAnimating 
+									shouldAutoScroll
+								/>
 							{/if}
-						{/if}
+							{/if}
 
 						{#if suspectCaughtWithoutWarrant}
 							<TerminalRows lines={outcomeSuspectCaughtWithoutWarrant[0]} />

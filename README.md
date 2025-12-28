@@ -1,4 +1,4 @@
-# Julia Sanfrancisco
+# Carolyn Sanfrancisco
 
 Chase Julia and her accomplices across different countries, unraveling clues, solving puzzles, and expanding your geography knowledge in this exciting detective game.
 

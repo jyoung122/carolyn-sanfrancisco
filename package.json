@@ -5,6 +5,7 @@
 	"scripts": {
 		"start": "concurrently \"typesafe-i18n\" \"npm run dev\"",
 		"dev": "vite dev --host",
+		"prebuild": "typesafe-i18n",
 		"build": "vite build",
 		"preview": "vite preview",
 		"test": "playwright test",
